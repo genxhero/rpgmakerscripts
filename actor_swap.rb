@@ -1,4 +1,5 @@
 
+#Place this function inside of the game_party class.
 
   def swap_actors(old_id, new_id)
     ids = members.map {|member| member.id};
@@ -12,3 +13,6 @@
     $game_player.refresh
     $game_map.need_refresh = true
   end
+
+  #Use this script to call the above function om the script-based 
+  #ability that will switch the characters.
